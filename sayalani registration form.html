@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Form - SMIT</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #207a40;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+
+    .full-width {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    input[type="file"] {
+      padding: 5px;
+    }
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .note {
+      font-size: 13px;
+      color: #555;
+    }
+
+    button {
+      grid-column: 1 / -1;
+      padding: 12px;
+      background-color: #207a40;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #1c6937;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Registration Form - SMIT</h1>
+    <form>
+      <div>
+        <label>Select Country</label>
+        <select><option>Select country</option></select>
+      </div>
+      <div>
+        <label>Select City</label>
+        <select><option>Select city</option></select>
+      </div>
+      <div>
+        <label>Select Course or Event</label>
+        <select><option>Select course or event</option></select>
+      </div>
+      <div>
+        <label>Computer Proficiency</label>
+        <select><option>Select your computer proficiency</option></select>
+      </div>
+      <div>
+        <label>Full Name</label>
+        <input type="text" placeholder="Full name">
+      </div>
+      <div>
+        <label>Father Name</label>
+        <input type="text" placeholder="Father name">
+      </div>
+      <div>
+        <label>Email</label>
+        <input type="email" placeholder="Email">
+      </div>
+      <div>
+        <label>Phone</label>
+        <input type="tel" placeholder="Phone">
+      </div>
+      <div>
+        <label>CNIC</label>
+        <input type="text" placeholder="CNIC">
+      </div>
+      <div>
+        <label>Father’s CNIC (optional)</label>
+        <input type="text" placeholder="Father's CNIC">
+      </div>
+      <div>
+        <label>Date of Birth</label>
+        <input type="date">
+      </div>
+      <div>
+        <label>Gender</label>
+        <select><option>Select gender</option></select>
+      </div>
+      <div class="full-width">
+        <label>Address</label>
+        <textarea rows="2" placeholder="Address"></textarea>
+      </div>
+      <div>
+        <label>Last Qualification</label>
+        <input type="text" placeholder="Last qualification">
+      </div>
+      <div>
+        <label>Do you have a Laptop?</label>
+        <select><option>Select option</option></select>
+      </div>
+      <div class="full-width">
+        <label>Picture (JPG/JPEG, Max 1MB)</label>
+        <input type="file">
+        <div class="note">With white or blue background. No glasses. Passport size photo.</div>
+      </div>
+
+      <div class="full-width">
+        <label>Terms & Conditions</label>
+        <ul class="note">
+          <li>I hereby declare that the information provided is correct.</li>
+          <li>I accept responsibilities of good conduct and no political activity.</li>
+          <li>Defiance will cancel my admission.</li>
+          <li>I will complete the final project.</li>
+          <li>Females must wear abaya/hijab in class.</li>
+        </ul>
+      </div>
+
+      <div class="checkbox full-width">
+        <input type="checkbox" id="robot">
+        <label for="robot">I'm not a robot</label>
+      </div>
+
+      <button type="submit">SUBMIT</button>
+    </form>
+  </div>
+</body>
+</html>
